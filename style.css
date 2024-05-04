@@ -1,0 +1,131 @@
+
+
+*{margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  
+    align-items: center;
+    font-family: "Sono", sans-serif;
+  }
+
+.pricing-container{
+    width: 100%;
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.pricing-plan{
+    height: 230px;
+    background-color: whitesmoke;
+    width: 300px;
+     padding: 10px;
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+
+
+}
+/* .pricing-plan:nth-child(even){
+    background-color: red;
+} */
+
+.plan-features{
+    text-decoration: none;
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    
+}
+
+.plan-title{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.plan-price{
+    height: 48px;
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.plan-button{
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    
+}
+
+
+  /* Hint: What can you do with a media query and flexbox? */
+  @media (max-width: 1250px) {
+
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .pricing-plan{
+       
+        width: 90%;
+        height: 30%;
+        margin-bottom: 20px;
+    }
+
+    .plan-title{
+    
+        font-size: 50px;
+}
+
+.plan-price{
+    height: auto;
+    width: 100%;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.plan-features{
+    text-decoration: none;
+    width: 60%;
+    height: auto;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    
+}
+
+.plan-button{
+    font-size: 50px;
+}
+.pricing-plan{
+    padding: 20px;
+}
+    
+  }
